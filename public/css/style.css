@@ -788,9 +788,6 @@ body,
 [data-theme="dark"] .lead {
     color: #d1d5db;
 }
-    background: #1f2937;
-    border-color: #374151;
-}
 
 [data-theme="dark"] .source-logo span {
     color: #f0f4f8;
@@ -1429,6 +1426,9 @@ body,
 }
 
 /* ========== EDUCATION SECTION ========== */
+b
+
+
 .education-section h2 {
     color: #1f2937;
     font-weight: 700;

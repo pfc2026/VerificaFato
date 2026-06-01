@@ -4,6 +4,15 @@ const User = require('../models/User');
 const { getEnv } = require('../config/env');
 const { createLog } = require('../services/log.service');
 
+function getRequestIp(req) {
+  return (
+    req.headers?.['x-forwarded-for']?.split(',')[0]?.trim() ||
+    req.headers?.['x-real-ip'] ||
+    req.socket?.remoteAddress ||
+    ''
+  );
+}
+
 /**
  * Auth controller: register + login.
  *
@@ -37,7 +46,7 @@ async function register(req, res, next) {
     await createLog({
       usuario: user._id,
       acao: 'USER_REGISTER',
-      ip: req.ip,
+      ip: getRequestIp(req),
       detalhes: { email: user.email },
     });
 
@@ -107,7 +116,7 @@ async function login(req, res, next) {
     await createLog({
       usuario: user._id,
       acao: 'USER_LOGIN',
-      ip: req.ip,
+      ip: getRequestIp(req),
       detalhes: { email: user.email },
     });
 

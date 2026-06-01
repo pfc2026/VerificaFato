@@ -117,7 +117,14 @@ function isApiError(data) {
 }
 
 function getApiErrorMessage(data, fallback) {
-  return data?.error?.message || data?.erro?.message || fallback;
+  const error = data?.error || data?.erro;
+  if (error?.code === 'CONFIG_ERROR') {
+    return 'O servidor no Vercel está sem variáveis de ambiente. Configure MONGODB_URI e JWT_SECRET no painel da Vercel.';
+  }
+  if (error?.code === 'DATABASE_CONNECTION_ERROR') {
+    return 'Não foi possível conectar ao banco MongoDB. Confira a URI e libere o acesso de rede no MongoDB Atlas.';
+  }
+  return error?.message || fallback;
 }
 
 function getApiErrorDetails(data) {
