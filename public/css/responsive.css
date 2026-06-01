@@ -1,0 +1,47 @@
+/* Responsive styles */
+@media (max-width: 768px) {
+    .app-nav {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .account-area {
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .search-container {
+        padding: 1.5rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+    .result-card {
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .search-container {
+        padding: 1rem;
+    }
+
+    .hero-section {
+        padding: 2rem 0;
+    }
+
+    .source-list li {
+        margin-bottom: 1rem;
+    }
+
+    .statistics-section .stat-card {
+        margin-bottom: 1rem;
+    }
+}

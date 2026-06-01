@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "start": "npm --prefix VerificaOeste-Parana-main start",
+    "dev": "npm --prefix VerificaOeste-Parana-main run dev",
+    "test": "npm --prefix VerificaOeste-Parana-main test"
+  },
+  "dependencies": {
+    "mongodb": "^7.2.0"
+  }
+}
