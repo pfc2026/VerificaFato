@@ -1,7 +1,7 @@
 // main.js
 
 const API_CONFIG = {
-    baseURL: window.location.origin || 'http://localhost:5000',
+    baseURL: window.location.origin || 'http://localhost:3000',
     endpoints: {
         verify: '/api/verificar',
         search: '/api/search'

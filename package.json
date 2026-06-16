@@ -2,13 +2,14 @@
   "name": "verifica-oeste",
   "version": "1.0.0",
   "description": "Sistema de verificação de notícias falsas para o Oeste do Paraná",
-  "main": "server.js",
+  "main": "src/server.js",
   "engines": {
     "node": "20.x"
   },
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "dev:frontend": "node dev-server.js",
     "test": "node tests/testAPI.js",
     "test:api": "node tests/testAPI.js",
     "audit": "npm audit"
