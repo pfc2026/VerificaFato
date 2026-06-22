@@ -622,14 +622,19 @@ app.get('/teste', (req, res) => {
 });
 
 const PORT = process.env.PORT || 3000;
-// Inicializa o modelo antes de iniciar o servidor
+
+function startServer() {
+    app.listen(PORT, () => {
+        console.log('🚀 Servidor rodando em http://localhost:' + PORT);
+    });
+}
+
+// Inicializa o modelo antes de iniciar o servidor, mas não bloqueia a interface
 initializeModel()
     .then(() => {
-        app.listen(PORT, () => {
-            console.log('🚀 Servidor rodando em http://localhost:' + PORT);
-        });
+        startServer();
     })
     .catch(error => {
-        console.error('❌ Erro fatal ao inicializar o modelo:', error);
-        process.exit(1);
+        console.warn('⚠️ Modelo TensorFlow indisponível no início. O servidor será iniciado mesmo assim.', error.message);
+        startServer();
     });

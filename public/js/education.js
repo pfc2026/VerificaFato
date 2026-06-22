@@ -1,10 +1,10 @@
 // ========== EDUCATION SECTION - LESSONS DATA ==========
 const lessonsData = {
     maiusculas: {
-        title: '✋ Atenção com EXCESSO DE MAIÚSCULAS',
+        title: 'Atenção com excesso de maiúsculas',
         content: `
             <h3>Por que as maiúsculas são um sinal de alerta?</h3>
-            <p>Textos com muitas LETRAS MAIÚSCULAS frequentemente indicam conteúdo sensacionalista ou de fake news. This é uma tática comum para chamar atenção e gerar reações emocionais.</p>
+            <p>Textos com muitas LETRAS MAIÚSCULAS frequentemente indicam conteúdo sensacionalista ou de fake news. Essa é uma tática comum para chamar atenção e gerar reações emocionais.</p>
             
             <h3>O que observar:</h3>
             <ul>
@@ -15,10 +15,10 @@ const lessonsData = {
             </ul>
 
             <h3>Exemplos reais:</h3>
-            <p><strong>❌ Exemplo de fake news:</strong><br>
+            <p><strong>Exemplo problemático:</strong><br>
             "VOCÊ NÃO VAI ACREDITAR NO QUE FAZEM ESCONDIDO!!! CLIQUE AGORA!!!"</p>
             
-            <p><strong>✅ Exemplo confiável:</strong><br>
+            <p><strong>Exemplo confiável:</strong><br>
             "Eleições municipais de 2024: principais candidatos anunciam propostas"</p>
 
             <h3>Como proteger-se:</h3>
@@ -31,7 +31,7 @@ const lessonsData = {
         `
     },
     alarmista: {
-        title: '🚨 Palavras Alarmistas e Sensacionalistas',
+        title: 'Palavras alarmistas e sensacionalistas',
         content: `
             <h3>O poder das palavras sensacionalistas</h3>
             <p>Fake news frequentemente usam palavras como "URGENTE", "BOMBA", "IMPACTANTE" e "REVELAÇÃO" para criar senso de imediatismo e urgência. Essas técnicas exploram a psicologia humana para gerar compartilhamentos impulsivos.</p>
@@ -55,7 +55,7 @@ const lessonsData = {
         `
     },
     fontes: {
-        title: '🔗 Verificando as Fontes',
+        title: 'Verificando as fontes',
         content: `
             <h3>A importância de verificar fontes</h3>
             <p>Uma das melhores formas de detectar fake news é verificar a origem da informação. Sempre procure a fonte original da notícia.</p>
@@ -71,12 +71,12 @@ const lessonsData = {
 
             <h3>Fontes confiáveis (Oeste do Paraná):</h3>
             <ul>
-                <li>✅ G1 Paraná</li>
-                <li>✅ Jornal O Paraná</li>
-                <li>✅ Gazeta do Povo</li>
-                <li>✅ Rádio Colméia</li>
-                <li>✅ Tribunal de Justiça do Paraná</li>
-                <li>✅ Câmaras Municipais oficiais</li>
+                <li>G1 Paraná</li>
+                <li>Jornal O Paraná</li>
+                <li>Gazeta do Povo</li>
+                <li>Rádio Colmeia</li>
+                <li>Tribunal de Justiça do Paraná</li>
+                <li>Câmaras Municipais oficiais</li>
             </ul>
 
             <h3>Sinais de alerta em websites:</h3>
@@ -89,16 +89,16 @@ const lessonsData = {
         `
     },
     contexto: {
-        title: '🏢 A Importância do Contexto',
+        title: 'A importância do contexto',
         content: `
             <h3>Contexto removido = Desinformação</h3>
             <p>Muitas fake news removem informação de contexto para distorcer significado. Uma frase verdadeira pode virar mentira quando tirada do seu contexto original.</p>
             
             <h3>Exemplos comuns:</h3>
-            <p><strong>❌ COM CONTEXTO REMOVIDO:</strong><br>
+            <p><strong>Com contexto removido:</strong><br>
             "Prefeito desvia milhões em recursos"</p>
             
-            <p><strong>✅ COM CONTEXTO COMPLETO:</strong><br>
+            <p><strong>Com contexto completo:</strong><br>
             "Prefeito nega denúncia de possível desvio; investigação ainda está em fase inicial"</p>
 
             <h3>Técnicas usadas:</h3>
@@ -120,18 +120,18 @@ const lessonsData = {
         `
     },
     emocional: {
-        title: '💔 Manipulação Emocional',
+        title: 'Manipulação emocional',
         content: `
             <h3>Emoções como arma</h3>
             <p>Fake news frequentemente exploram emoções (raiva, medo, esperança) para fazer com que você compartilhe sem pensar. Isso é chamado de "emotional hijacking".</p>
             
             <h3>Emoções mais exploradas:</h3>
             <ul>
-                <li><strong>😡 RAIVA:</strong> Notícias sobre injustiça ou abuso</li>
-                <li><strong>😨 MEDO:</strong> Alertas sobre saúde, segurança ou economia</li>
-                <li><strong>😍 ESPERANÇA:</strong> Promessas de solução milagrosa</li>
-                <li><strong>😲 SURPRESA:</strong> Revelações surpreendentes</li>
-                <li><strong>😂 DIVERSÃO:</strong> Memes e conteúdo "viral"</li>
+                <li><strong>Raiva:</strong> Notícias sobre injustiça ou abuso</li>
+                <li><strong>Medo:</strong> Alertas sobre saúde, segurança ou economia</li>
+                <li><strong>Esperança:</strong> Promessas de solução milagrosa</li>
+                <li><strong>Surpresa:</strong> Revelações surpreendentes</li>
+                <li><strong>Diversão:</strong> Memes e conteúdo "viral"</li>
             </ul>
 
             <h3>O ciclo da manipulação emocional:</h3>
@@ -152,13 +152,13 @@ const lessonsData = {
 
             <h3>Técnica do Fact-Check emocional:</h3>
             <p>Se você sente raiva intensa ao ler algo, faça 3 perguntas:<br>
-            ✓ Essa emoção é propositalmente provocada?<br>
-            ✓ Os fatos são realmente tão simples quanto parecem?<br>
-            ✓ Existem outras perspectivas legítimas?</p>
+            Essa emoção é propositalmente provocada?<br>
+            Os fatos são realmente tão simples quanto parecem?<br>
+            Existem outras perspectivas legítimas?</p>
         `
     },
     midia: {
-        title: '🎬 Imagens Manipuladas e Deep Fakes',
+        title: 'Imagens manipuladas e deepfakes',
         content: `
             <h3>A tecnologia dos Deep Fakes</h3>
             <p>Imagens e vídeos são frequentemente manipulados ou tirados de contexto. Com avanços em inteligência artificial, agora é possível criar vídeos convincentes de pessoas dizendo coisas que nunca disseram.</p>
